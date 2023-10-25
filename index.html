@@ -3,22 +3,28 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>Jamie's portfolio</title>
+      <title>Jamie's Portfolio</title>
       <link href="style.css" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
       <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
       <script src="script.js"></script>
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicom/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/site.webmanifest">
   </head>
-    <body>
+  <body>
 	  
-        <div class="container">
+    <div class="container">
 	  
 		<!--────────────────Header───────────────-->
 	<header>
-		<a class="logo" href="#home">
-              <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
-		</a>
+		<p class="logo">
+              <img src="img/logo.png" alt="Jamie's Wave logo"/>Jamie Metcalfe
+    <p>
 		<nav>	
 		 <ul class="nav-bar"><div class="bg"></div>
 			<li><a class="nav-link active" href="#home">Home</a></li>
@@ -35,18 +41,18 @@
 		</nav>
 	</header>
 	<main>
+    
 		<!--─────────────────Home────────────────-->
 	  <div id="home">
 		 <div class="filter"></div>
 		 <section class="intro">
        <img>
 		  <h3>Jamie Metcalfe<hr></h3>
-		  <p>Front-end Web Developer.</p>
-		  <p>Check out my <a href="https://jamiemetcalfe18.github.io/Jamies-tech-blog/" target="_blank">blog</a>.</p>
+		  <p>Web Developer</p>
+		  <p>Check out my <a class="blog-link" href="https://jamiemetcalfe18.github.io/Jamies-tech-blog/">blog</a>.</p>
         
 			  
-		  <!--────social media links─────-->
-			 
+		  <!--────Social Media Links─────-->
 		  <div class="social-media">
 			  <a href="https://twitter.com/j_metcalfe18" target="_blank"><i class='fab fa-twitter'></i></a>
 			  <a href="https://github.com/jamiemetcalfe18" target="_blank"><i class='fab fa-github'></i></a>
@@ -56,8 +62,47 @@
 		 </section> 
 	  </div>  
     <!--- back to top button --->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+    
+    <!--───────────────Skills───────────────-->
+    <div id="skills">
+      <h3>Skills<hr></h3>
+      <p>Languages and Frameworks:</p>
+        <div id="lang">
+          <!--HTML-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="50" height="50"/>
+          <!--CSS-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css" width="50" height="50"/>
+          <!--Javascript-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/>
+          <!--Bootstrap-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="50" height="50"/>
+          <!--Pyhton-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alit="python" width="50" height="50"/>
+          <!--Django-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="50" height="50"/>
+          <!--MySQL-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" height="50"/>
 
+
+        <div>
+
+      <p>Tools and Utilities:</p>
+        <div id="tool">
+          <!--Git-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="50" height="50"/>
+          <!--GitHub-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50" height="50"/>
+          <!--npm-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="50" height="50"/>
+          <!--Linux-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alit="linux" width="50" height="50"/>
+          <!--VSCode-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="50" height="50"/>
+          <!--Photoshop-->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" width="50" height="50"/>
+        </div>
+    </div>
     
 	  <!--───────────────Projects───────────────-->
 	  <div id="projects"> 
@@ -65,7 +110,8 @@
 		  <p>Here are some of my projects, feel free to check them out! I have a lot more things posted on my </p>
 		  <div class="work-box">
 		  <div class="work">
-		<!--───────────────card───────────────-->
+        
+		<!--───────────────Cards───────────────-->
 			<div class="card">
 			    <img class="work-img" src="img/dynamicshoppinglist.png" alt="A picture of the dynamic shopping list project.">
 			    <a href="https://jamiemetcalfe18.github.io/dynamic-shopping-list/" target="_blank">
@@ -115,8 +161,9 @@
 		  </div>
 
 	</main>
-	  <footer class="copyright">© 2022 
+	  <footer class="copyright">© 2023 
 		  <a href="https://github.com/jamiemetcalfe18" target="_blank"> Jamie Metcalfe.</a>
+      <p>Icons thanks to <a href="https://devicon.dev/" alt=devicon>Devicon!</a></p>
      </footer>
 	  
   </div>
